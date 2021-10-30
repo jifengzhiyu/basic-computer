@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.m
-//  day1
+//  模拟聊天
 //
-//  Created by 翟佳阳 on 2021/10/29.
+//  Created by 翟佳阳 on 2021/10/30.
 //
 
 #import "SceneDelegate.h"
