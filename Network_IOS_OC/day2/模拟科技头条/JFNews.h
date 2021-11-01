@@ -16,6 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *sitename;
 @property (nonatomic, strong) NSNumber *addtime;
 
+//处理日期用
+@property (nonatomic, copy, readonly) NSString *time;
+
 + (instancetype)newsWithDict:(NSDictionary *)dic;
 //发送异步请求获取数据
 + (void)newsWithSuccess:(void(^)(NSArray *array))success error:(void(^)(void))error;

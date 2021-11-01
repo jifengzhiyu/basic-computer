@@ -55,4 +55,27 @@
         }
     }];
 }
+
+//重写time的getter方法，获取时间
+- (NSString *)time{
+    //把数字的日期转化成 日期对象
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:self.addtime.intValue];
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    //日期相减
+    NSDateComponents *components = [calendar components:NSCalendarUnitMinute fromDate:date toDate:[NSDate date] options:0];
+    if(components.minute < 60){
+        return [NSString stringWithFormat:@"%zd分钟以前",components.minute];
+    }
+    //小时
+    components = [calendar components:NSCalendarUnitHour fromDate:date toDate:[NSDate date] options:0];
+    if(components.hour < 24){
+        return [NSString stringWithFormat:@"%zd小时以前",components.minute];
+    }
+    
+    //天
+    NSDateFormatter *ndf = [[NSDateFormatter alloc] init];
+    ndf.dateFormat = @"MM-dd HH:mm";
+    return [ndf stringFromDate:date];
+    
+}
 @end

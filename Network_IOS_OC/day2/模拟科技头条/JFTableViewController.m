@@ -51,10 +51,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *reuseId = @"news";
-    JFTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseId];
+    //返回不同的可重用标识 根据是否有图片来返回
+    JFNews *news = self.newsList[indexPath.row];
+    
+    
+    JFTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[JFTableViewCell getReuseID:news]];
    
-    cell.news = self.newsList[indexPath.row];
+    cell.news = news;
     
     return cell;
 }

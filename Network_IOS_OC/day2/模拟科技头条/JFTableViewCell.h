@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface JFTableViewCell : UITableViewCell
 @property (nonatomic, strong) JFNews *news;
 
-
++ (NSString *)getReuseID:(JFNews *)news;
 @end
 
 NS_ASSUME_NONNULL_END
