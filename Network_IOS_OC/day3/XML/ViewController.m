@@ -91,18 +91,23 @@
 - (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName{
     NSLog(@"4找到结束节点%@",elementName);
     //先判断
-    if ([elementName isEqualToString:@"name"]) {
-        self.currentVideo.name = self.mString;
-    }else if([elementName isEqualToString:@"length"]) {
-        self.currentVideo.length = @(self.mString.intValue);
-    }else if([elementName isEqualToString:@"videoURL"]) {
-        self.currentVideo.videoURL = self.mString;
-    }else if([elementName isEqualToString:@"imageURL"]) {
-        self.currentVideo.imageURL = self.mString;
-    }else if([elementName isEqualToString:@"desc"]) {
-        self.currentVideo.desc = self.mString;
-    }else if([elementName isEqualToString:@"teacher"]) {
-        self.currentVideo.teacher = self.mString;
+//    if ([elementName isEqualToString:@"name"]) {
+//        self.currentVideo.name = self.mString;
+//    }else if([elementName isEqualToString:@"length"]) {
+//        self.currentVideo.length = @(self.mString.intValue);
+//    }else if([elementName isEqualToString:@"videoURL"]) {
+//        self.currentVideo.videoURL = self.mString;
+//    }else if([elementName isEqualToString:@"imageURL"]) {
+//        self.currentVideo.imageURL = self.mString;
+//    }else if([elementName isEqualToString:@"desc"]) {
+//        self.currentVideo.desc = self.mString;
+//    }else if([elementName isEqualToString:@"teacher"]) {
+//        self.currentVideo.teacher = self.mString;
+//    }
+    if(![elementName isEqualToString:@"video"] && ![elementName isEqualToString:@"videos"]){
+        //把self.mString地址 赋给 对应属性的地址, 数值会随着原始变量值 的改变而改变
+        //不会做 类型的转换
+        [self.currentVideo setValue:self.mString forKey:elementName];
     }
     
     //清空可变字符串
