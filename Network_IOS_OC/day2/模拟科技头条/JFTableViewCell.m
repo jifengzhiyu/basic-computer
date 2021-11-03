@@ -47,6 +47,10 @@
     //判断news.title的长度，和lable的长度比较
     //title>labl，隐藏摘要
     //获取title的长度
+    
+    //lbl不会在第一次加载的时候 计算自动布局
+    [self.titleView layoutIfNeeded];
+    
     CGFloat titleLength = [self.news.title sizeWithAttributes:@{NSFontAttributeName : self.titleView.font}].width;
     if(titleLength > self.titleView.frame.size.width){
         self.summaryView.hidden = YES;
