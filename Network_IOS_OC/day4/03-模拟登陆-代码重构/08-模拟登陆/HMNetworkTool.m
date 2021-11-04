@@ -34,7 +34,7 @@
 - (void)loginWithSuccess:(void (^)())success error:(void (^)())error {
     
     [NSThread sleepForTimeInterval:1.0];
-    NSURL *url = [NSURL URLWithString:@"http://127.0.0.1/php/loginhmac.php"];
+    NSURL *url = [NSURL URLWithString:@"http://127.0.0.1/myApache/php/loginhmac.php"];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     //设置post
     request.HTTPMethod = @"post";
@@ -84,7 +84,7 @@
     //  2  把原密码和之前生成的md5值再进行hmac加密
     NSString *hmacKey = [pwd hmacMD5StringWithKey:md5Key];
     //  3  从服务器获取当前时间 到分钟 的字符串
-    NSURL *url = [NSURL URLWithString:@"http://127.0.0.1/php/hmackey.php"];
+    NSURL *url = [NSURL URLWithString:@"http://127.0.0.1/myApache/php/hmackey.php"];
     NSData *data = [NSData dataWithContentsOfURL:url];
     //JSON的反序列化
     NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
