@@ -159,6 +159,8 @@
     //取消自定义操作，取消没有执行的操作
     //和自定义操作的cancel和用，可以最大限度地达到取消的效果
     [self cancel];
+    //    [self cancel];无法取消正在进行的 conn
+
 }
 #pragma mark 自定义operaton
 //重写main
@@ -187,7 +189,10 @@
             }
             return;
         }
-        
+        //也取消正在进行的操作
+        if(self.isCancelled){
+            return;
+        }
         //请求头
         //Range:bytes=x-y  从x个字节下载到y个字节
         //Range:bytes=x-   从x个字节下到最后
