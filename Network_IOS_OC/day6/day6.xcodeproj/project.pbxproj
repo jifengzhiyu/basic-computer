@@ -28,6 +28,18 @@
 		3B2E63F4273636DE007D2F93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B2E63F3273636DE007D2F93 /* Assets.xcassets */; };
 		3B2E63F7273636DE007D2F93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B2E63F5273636DE007D2F93 /* LaunchScreen.storyboard */; };
 		3B2E63FA273636DE007D2F93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E63F9273636DE007D2F93 /* main.m */; };
+		3B2E647E2736CFA1007D2F93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E647D2736CFA1007D2F93 /* AppDelegate.m */; };
+		3B2E64812736CFA1007D2F93 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E64802736CFA1007D2F93 /* SceneDelegate.m */; };
+		3B2E64842736CFA1007D2F93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E64832736CFA1007D2F93 /* ViewController.m */; };
+		3B2E64872736CFA1007D2F93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B2E64852736CFA1007D2F93 /* Main.storyboard */; };
+		3B2E64892736CFA4007D2F93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B2E64882736CFA4007D2F93 /* Assets.xcassets */; };
+		3B2E648C2736CFA4007D2F93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B2E648A2736CFA4007D2F93 /* LaunchScreen.storyboard */; };
+		3B2E648F2736CFA4007D2F93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E648E2736CFA4007D2F93 /* main.m */; };
+		3B2E64A12736D066007D2F93 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E64962736D066007D2F93 /* unzip.c */; };
+		3B2E64A22736D066007D2F93 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E64972736D066007D2F93 /* zip.c */; };
+		3B2E64A32736D066007D2F93 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E64982736D066007D2F93 /* ioapi.c */; };
+		3B2E64A42736D066007D2F93 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E64992736D066007D2F93 /* mztools.c */; };
+		3B2E64A52736D066007D2F93 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2E64A02736D066007D2F93 /* SSZipArchive.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +80,30 @@
 		3B2E63F6273636DE007D2F93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B2E63F8273636DE007D2F93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B2E63F9273636DE007D2F93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3B2E64622736CB69007D2F93 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		3B2E647A2736CFA1007D2F93 /* 压缩&解压缩.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "压缩&解压缩.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B2E647C2736CFA1007D2F93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3B2E647D2736CFA1007D2F93 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3B2E647F2736CFA1007D2F93 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		3B2E64802736CFA1007D2F93 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		3B2E64822736CFA1007D2F93 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3B2E64832736CFA1007D2F93 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3B2E64862736CFA1007D2F93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B2E64882736CFA4007D2F93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B2E648B2736CFA4007D2F93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B2E648D2736CFA4007D2F93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B2E648E2736CFA4007D2F93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3B2E64962736D066007D2F93 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		3B2E64972736D066007D2F93 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		3B2E64982736D066007D2F93 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		3B2E64992736D066007D2F93 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		3B2E649A2736D066007D2F93 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		3B2E649B2736D066007D2F93 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		3B2E649C2736D066007D2F93 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		3B2E649D2736D066007D2F93 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		3B2E649E2736D066007D2F93 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		3B2E649F2736D066007D2F93 /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		3B2E64A02736D066007D2F93 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +128,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3B2E64772736CFA1007D2F93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -102,7 +145,9 @@
 				3B2E63AC2736263D007D2F93 /* DataTask */,
 				3B2E63C927362F1E007D2F93 /* DownloadTask */,
 				3B2E63E6273636DB007D2F93 /* 下载进度 */,
+				3B2E647B2736CFA1007D2F93 /* 压缩&解压缩 */,
 				3B2E638B27362287007D2F93 /* Products */,
+				3B2E64612736CB69007D2F93 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +157,7 @@
 				3B2E63AB2736263D007D2F93 /* DataTask.app */,
 				3B2E63C827362F1E007D2F93 /* DownloadTask.app */,
 				3B2E63E5273636DB007D2F93 /* 下载进度.app */,
+				3B2E647A2736CFA1007D2F93 /* 压缩&解压缩.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,6 +216,59 @@
 			path = "下载进度";
 			sourceTree = "<group>";
 		};
+		3B2E64612736CB69007D2F93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B2E64622736CB69007D2F93 /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B2E647B2736CFA1007D2F93 /* 压缩&解压缩 */ = {
+			isa = PBXGroup;
+			children = (
+				3B2E647C2736CFA1007D2F93 /* AppDelegate.h */,
+				3B2E647D2736CFA1007D2F93 /* AppDelegate.m */,
+				3B2E647F2736CFA1007D2F93 /* SceneDelegate.h */,
+				3B2E64802736CFA1007D2F93 /* SceneDelegate.m */,
+				3B2E64822736CFA1007D2F93 /* ViewController.h */,
+				3B2E64832736CFA1007D2F93 /* ViewController.m */,
+				3B2E64852736CFA1007D2F93 /* Main.storyboard */,
+				3B2E64882736CFA4007D2F93 /* Assets.xcassets */,
+				3B2E648A2736CFA4007D2F93 /* LaunchScreen.storyboard */,
+				3B2E648D2736CFA4007D2F93 /* Info.plist */,
+				3B2E648E2736CFA4007D2F93 /* main.m */,
+				3B2E64942736D066007D2F93 /* SSZipArchive */,
+			);
+			path = "压缩&解压缩";
+			sourceTree = "<group>";
+		};
+		3B2E64942736D066007D2F93 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				3B2E64952736D066007D2F93 /* minizip */,
+				3B2E649F2736D066007D2F93 /* SSZipArchive.h */,
+				3B2E64A02736D066007D2F93 /* SSZipArchive.m */,
+			);
+			path = SSZipArchive;
+			sourceTree = SOURCE_ROOT;
+		};
+		3B2E64952736D066007D2F93 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				3B2E64962736D066007D2F93 /* unzip.c */,
+				3B2E64972736D066007D2F93 /* zip.c */,
+				3B2E64982736D066007D2F93 /* ioapi.c */,
+				3B2E64992736D066007D2F93 /* mztools.c */,
+				3B2E649A2736D066007D2F93 /* crypt.h */,
+				3B2E649B2736D066007D2F93 /* zip.h */,
+				3B2E649C2736D066007D2F93 /* unzip.h */,
+				3B2E649D2736D066007D2F93 /* mztools.h */,
+				3B2E649E2736D066007D2F93 /* ioapi.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -224,6 +323,23 @@
 			productReference = 3B2E63E5273636DB007D2F93 /* 下载进度.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3B2E64792736CFA1007D2F93 /* 压缩&解压缩 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B2E64902736CFA4007D2F93 /* Build configuration list for PBXNativeTarget "压缩&解压缩" */;
+			buildPhases = (
+				3B2E64762736CFA1007D2F93 /* Sources */,
+				3B2E64772736CFA1007D2F93 /* Frameworks */,
+				3B2E64782736CFA1007D2F93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "压缩&解压缩";
+			productName = "压缩&解压缩";
+			productReference = 3B2E647A2736CFA1007D2F93 /* 压缩&解压缩.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -240,6 +356,9 @@
 						CreatedOnToolsVersion = 13.0;
 					};
 					3B2E63E4273636DB007D2F93 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					3B2E64792736CFA1007D2F93 = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
@@ -260,6 +379,7 @@
 				3B2E63AA2736263D007D2F93 /* DataTask */,
 				3B2E63C727362F1E007D2F93 /* DownloadTask */,
 				3B2E63E4273636DB007D2F93 /* 下载进度 */,
+				3B2E64792736CFA1007D2F93 /* 压缩&解压缩 */,
 			);
 		};
 /* End PBXProject section */
@@ -292,6 +412,16 @@
 				3B2E63F7273636DE007D2F93 /* LaunchScreen.storyboard in Resources */,
 				3B2E63F4273636DE007D2F93 /* Assets.xcassets in Resources */,
 				3B2E63F2273636DB007D2F93 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B2E64782736CFA1007D2F93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B2E648C2736CFA4007D2F93 /* LaunchScreen.storyboard in Resources */,
+				3B2E64892736CFA4007D2F93 /* Assets.xcassets in Resources */,
+				3B2E64872736CFA1007D2F93 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +458,22 @@
 				3B2E63E9273636DB007D2F93 /* AppDelegate.m in Sources */,
 				3B2E63FA273636DE007D2F93 /* main.m in Sources */,
 				3B2E63EC273636DB007D2F93 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B2E64762736CFA1007D2F93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B2E64842736CFA1007D2F93 /* ViewController.m in Sources */,
+				3B2E64A12736D066007D2F93 /* unzip.c in Sources */,
+				3B2E64A52736D066007D2F93 /* SSZipArchive.m in Sources */,
+				3B2E64A42736D066007D2F93 /* mztools.c in Sources */,
+				3B2E647E2736CFA1007D2F93 /* AppDelegate.m in Sources */,
+				3B2E64A22736D066007D2F93 /* zip.c in Sources */,
+				3B2E648F2736CFA4007D2F93 /* main.m in Sources */,
+				3B2E64812736CFA1007D2F93 /* SceneDelegate.m in Sources */,
+				3B2E64A32736D066007D2F93 /* ioapi.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +524,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				3B2E63F6273636DE007D2F93 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3B2E64852736CFA1007D2F93 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B2E64862736CFA1007D2F93 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3B2E648A2736CFA4007D2F93 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B2E648B2736CFA4007D2F93 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -659,6 +821,60 @@
 			};
 			name = Release;
 		};
+		3B2E64912736CFA4007D2F93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6839A4KRP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "压缩&解压缩/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jifengzhiyu-github.www.------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B2E64922736CFA4007D2F93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6839A4KRP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "压缩&解压缩/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jifengzhiyu-github.www.------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -694,6 +910,15 @@
 			buildConfigurations = (
 				3B2E63FC273636DE007D2F93 /* Debug */,
 				3B2E63FD273636DE007D2F93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B2E64902736CFA4007D2F93 /* Build configuration list for PBXNativeTarget "压缩&解压缩" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B2E64912736CFA4007D2F93 /* Debug */,
+				3B2E64922736CFA4007D2F93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
