@@ -7,7 +7,7 @@
 
 #import "ViewController.h"
 #import "AFHTTPSessionManager.h"
-@interface ViewController ()
+@interface ViewController ()<NSXMLParserDelegate>
 
 @end
 
@@ -18,9 +18,48 @@
     // Do any additional setup after loading the view.
     //[self get];
     //[self download];
-    [self baiDu];
+    //[self baiDu];
+    [self getXML];
 }
 
+- (void)getXML{
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    //默认json反序列化，所以这里要修改
+    manager.responseSerializer = [AFXMLParserResponseSerializer serializer];
+    [manager GET:@"http://127.0.0.1/myApache/videos.xml" parameters:nil headers:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSXMLParser *responseObject) {
+            responseObject.delegate = self;
+            [responseObject parse];
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            NSLog(@"%@",error);
+        }];
+}
+#pragma mark NSXMLParser 的代理方法
+
+- (void)parserDidStartDocument:(NSXMLParser *)parser{
+    NSLog(@"1 开始解析");
+}
+
+- (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary<NSString *,NSString *> *)attributeDict{
+    NSLog(@"2 开始节点 %@  %@",elementName,attributeDict);
+}
+
+- (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string{
+    NSLog(@"3 节点之间的内容 %@",string);
+}
+
+- (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName{
+    NSLog(@"4 结束节点 %@",elementName);
+}
+
+- (void)parserDidEndDocument:(NSXMLParser *)parser{
+    NSLog(@"5 结束解析");
+}
+
+- (void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError{
+    NSLog(@"6 错误");
+}
+
+#pragma mark NSXMLParser 的代理方法
 - (void)download{
     NSURL *url = [NSURL URLWithString:@"http://127.0.0.1/myApache/greek.zip"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
