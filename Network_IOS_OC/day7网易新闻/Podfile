@@ -1,0 +1,3 @@
+target 'day7网易新闻' do
+		pod 'AFNetworking'
+end
