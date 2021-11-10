@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="chM-eG-O2N">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0bS-2O-gXd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -8,58 +8,85 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="kmV-pJ-0fe">
+            <objects>
+                <tableViewController id="0bS-2O-gXd" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Y3Y-YQ-XNn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <containerView key="tableHeaderView" opaque="NO" contentMode="scaleToFill" id="SKa-Ir-4kQ">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <connections>
+                                <segue destination="chM-eG-O2N" kind="embed" id="3f9-hs-fSF"/>
+                            </connections>
+                        </containerView>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="twN-AK-cCX">
+                                <rect key="frame" x="0.0" y="344.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="twN-AK-cCX" id="b0v-wN-kOs">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="0bS-2O-gXd" id="G6S-2D-buv"/>
+                            <outlet property="delegate" destination="0bS-2O-gXd" id="96S-id-h5x"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JtT-3c-qMu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1093" y="22"/>
+        </scene>
         <!--Image Loop Conroller Collection View Controller-->
         <scene sceneID="EfP-k9-OFA">
             <objects>
                 <collectionViewController id="chM-eG-O2N" customClass="JFImageLoopConrollerCollectionViewController" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="L44-BC-DjO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fpx-7o-mbp">
-                            <size key="itemSize" width="414" height="892"/>
-                            <size key="estimatedItemSize" width="390" height="844"/>
+                            <size key="itemSize" width="414" height="300"/>
+                            <size key="estimatedItemSize" width="390" height="300"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="headline" id="zRG-0l-lTz" customClass="JFHeadLineCell">
-                                <rect key="frame" x="0.0" y="2" width="414" height="892"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="nHo-MS-dDe">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="892"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bs5-yG-pBr">
-                                            <rect key="frame" x="6" y="69" width="400" height="270"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="400" id="LWf-No-3Mv"/>
-                                                <constraint firstAttribute="height" constant="270" id="PkU-f1-4jr"/>
-                                            </constraints>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bs5-yG-pBr">
+                                            <rect key="frame" x="6" y="0.0" width="400" height="270"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <pageControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="H6e-wK-dSp">
-                                            <rect key="frame" x="228" y="366" width="173" height="26"/>
+                                        <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="H6e-wK-dSp">
+                                            <rect key="frame" x="219" y="282" width="173" height="26"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="pageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="currentPageIndicatorTintColor" systemColor="systemGreenColor"/>
                                         </pageControl>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oD1-OS-Fqk">
-                                            <rect key="frame" x="8" y="347" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Labelaaaaaaaaaaaaaaaaaaaa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oD1-OS-Fqk">
+                                            <rect key="frame" x="8" y="263" width="398" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="Bs5-yG-pBr" secondAttribute="bottom" constant="553" id="4Dx-n1-z6j"/>
-                                        <constraint firstAttribute="trailing" secondItem="H6e-wK-dSp" secondAttribute="trailing" constant="22" id="Pet-VC-Agy"/>
-                                        <constraint firstAttribute="trailing" secondItem="Bs5-yG-pBr" secondAttribute="trailing" constant="8" id="Q0p-Ht-75a"/>
-                                        <constraint firstAttribute="bottom" secondItem="oD1-OS-Fqk" secondAttribute="bottom" constant="524" id="bmQ-en-Cwb"/>
-                                        <constraint firstAttribute="bottom" secondItem="H6e-wK-dSp" secondAttribute="bottom" constant="500" id="lUo-t2-k86"/>
-                                        <constraint firstItem="oD1-OS-Fqk" firstAttribute="leading" secondItem="nHo-MS-dDe" secondAttribute="leading" constant="8" id="oUE-k9-Pbn"/>
-                                    </constraints>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </collectionViewCellContentView>
-                                <size key="customSize" width="414" height="892"/>
+                                <size key="customSize" width="414" height="300"/>
                                 <connections>
                                     <outlet property="imgsrcView" destination="Bs5-yG-pBr" id="VO3-9p-Y0d"/>
                                     <outlet property="pageControl" destination="H6e-wK-dSp" id="70w-3o-gU3"/>

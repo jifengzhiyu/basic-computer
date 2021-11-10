@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import <AFNetworkActivityIndicatorManager.h>
 
 @interface AppDelegate ()
 
@@ -16,6 +17,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //显示加载网络的指示符
+    [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
+    //设置缓存
+    NSURLCache *cache = [[NSURLCache alloc] initWithMemoryCapacity:1024*1024*5 diskCapacity:1024*1024*10 diskPath:@"images"];
+    //diskPath文件夹名字，默认在cache里面的一个自定义文件夹
+    //设置全局缓存策略 
+    [NSURLCache setSharedURLCache:cache];
+    
     return YES;
 }
 
