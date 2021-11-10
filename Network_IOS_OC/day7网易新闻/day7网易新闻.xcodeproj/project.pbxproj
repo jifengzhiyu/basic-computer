@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BC2FE01273C0B760058FACF /* JFNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2FE00273C0B760058FACF /* JFNews.m */; };
+		3BC2FE04273C0DBB0058FACF /* JFNewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2FE03273C0DBA0058FACF /* JFNewsController.m */; };
+		3BC2FE07273C12470058FACF /* JFNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2FE06273C12470058FACF /* JFNewsCell.m */; };
 		3BCA9D26273A7168008E7F84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCA9D25273A7168008E7F84 /* AppDelegate.m */; };
 		3BCA9D29273A7168008E7F84 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCA9D28273A7168008E7F84 /* SceneDelegate.m */; };
 		3BCA9D31273A716A008E7F84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BCA9D30273A716A008E7F84 /* Assets.xcassets */; };
@@ -21,6 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BC2FDFF273C0B760058FACF /* JFNews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFNews.h; sourceTree = "<group>"; };
+		3BC2FE00273C0B760058FACF /* JFNews.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFNews.m; sourceTree = "<group>"; };
+		3BC2FE02273C0DBA0058FACF /* JFNewsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFNewsController.h; sourceTree = "<group>"; };
+		3BC2FE03273C0DBA0058FACF /* JFNewsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFNewsController.m; sourceTree = "<group>"; };
+		3BC2FE05273C12470058FACF /* JFNewsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFNewsCell.h; sourceTree = "<group>"; };
+		3BC2FE06273C12470058FACF /* JFNewsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFNewsCell.m; sourceTree = "<group>"; };
 		3BCA9D21273A7168008E7F84 /* day7网易新闻.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "day7网易新闻.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BCA9D24273A7168008E7F84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3BCA9D25273A7168008E7F84 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -74,6 +83,19 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		3BC2FDFE273C0B550058FACF /* News */ = {
+			isa = PBXGroup;
+			children = (
+				3BC2FDFF273C0B760058FACF /* JFNews.h */,
+				3BC2FE00273C0B760058FACF /* JFNews.m */,
+				3BC2FE02273C0DBA0058FACF /* JFNewsController.h */,
+				3BC2FE03273C0DBA0058FACF /* JFNewsController.m */,
+				3BC2FE05273C12470058FACF /* JFNewsCell.h */,
+				3BC2FE06273C12470058FACF /* JFNewsCell.m */,
+			);
+			name = News;
+			sourceTree = "<group>";
+		};
 		3BCA9D18273A7168008E7F84 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +118,8 @@
 		3BCA9D23273A7168008E7F84 /* day7网易新闻 */ = {
 			isa = PBXGroup;
 			children = (
+				3BCA9D46273AA4DA008E7F84 /* News.storyboard */,
+				3BC2FDFE273C0B550058FACF /* News */,
 				3BCA9D42273A9A76008E7F84 /* ImageLoop */,
 				3BCA9D3E273A7831008E7F84 /* JFNetworkTools */,
 				3BCA9D24273A7168008E7F84 /* AppDelegate.h */,
@@ -124,7 +148,6 @@
 			children = (
 				3BCA9D43273A9A98008E7F84 /* JFHeadLine.h */,
 				3BCA9D44273A9A98008E7F84 /* JFHeadLine.m */,
-				3BCA9D46273AA4DA008E7F84 /* News.storyboard */,
 				3BCA9D48273AA4FF008E7F84 /* JFImageLoopConrollerCollectionViewController.h */,
 				3BCA9D49273AA4FF008E7F84 /* JFImageLoopConrollerCollectionViewController.m */,
 				3BCA9D4B273ABCB9008E7F84 /* JFHeadLineCell.h */,
@@ -230,10 +253,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BC2FE01273C0B760058FACF /* JFNews.m in Sources */,
 				3BCA9D45273A9A98008E7F84 /* JFHeadLine.m in Sources */,
 				3BCA9D4D273ABCBA008E7F84 /* JFHeadLineCell.m in Sources */,
 				3BCA9D26273A7168008E7F84 /* AppDelegate.m in Sources */,
+				3BC2FE04273C0DBB0058FACF /* JFNewsController.m in Sources */,
 				3BCA9D41273A7894008E7F84 /* JFNetworkTools.m in Sources */,
+				3BC2FE07273C12470058FACF /* JFNewsCell.m in Sources */,
 				3BCA9D4A273AA4FF008E7F84 /* JFImageLoopConrollerCollectionViewController.m in Sources */,
 				3BCA9D37273A716A008E7F84 /* main.m in Sources */,
 				3BCA9D29273A7168008E7F84 /* SceneDelegate.m in Sources */,
