@@ -10,6 +10,8 @@
 		3BC2FE01273C0B760058FACF /* JFNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2FE00273C0B760058FACF /* JFNews.m */; };
 		3BC2FE04273C0DBB0058FACF /* JFNewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2FE03273C0DBA0058FACF /* JFNewsController.m */; };
 		3BC2FE07273C12470058FACF /* JFNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2FE06273C12470058FACF /* JFNewsCell.m */; };
+		3BC2FE09273CAACD0058FACF /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC2FE08273CAACD0058FACF /* Home.storyboard */; };
+		3BC2FE0B273D61660058FACF /* topic_news.json in Resources */ = {isa = PBXBuildFile; fileRef = 3BC2FE0A273D61660058FACF /* topic_news.json */; };
 		3BCA9D26273A7168008E7F84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCA9D25273A7168008E7F84 /* AppDelegate.m */; };
 		3BCA9D29273A7168008E7F84 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCA9D28273A7168008E7F84 /* SceneDelegate.m */; };
 		3BCA9D31273A716A008E7F84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BCA9D30273A716A008E7F84 /* Assets.xcassets */; };
@@ -30,6 +32,8 @@
 		3BC2FE03273C0DBA0058FACF /* JFNewsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFNewsController.m; sourceTree = "<group>"; };
 		3BC2FE05273C12470058FACF /* JFNewsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFNewsCell.h; sourceTree = "<group>"; };
 		3BC2FE06273C12470058FACF /* JFNewsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFNewsCell.m; sourceTree = "<group>"; };
+		3BC2FE08273CAACD0058FACF /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		3BC2FE0A273D61660058FACF /* topic_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topic_news.json; sourceTree = "<group>"; };
 		3BCA9D21273A7168008E7F84 /* day7网易新闻.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "day7网易新闻.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BCA9D24273A7168008E7F84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3BCA9D25273A7168008E7F84 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				3BCA9D46273AA4DA008E7F84 /* News.storyboard */,
+				3BC2FE08273CAACD0058FACF /* Home.storyboard */,
+				3BC2FE0A273D61660058FACF /* topic_news.json */,
 				3BC2FDFE273C0B550058FACF /* News */,
 				3BCA9D42273A9A76008E7F84 /* ImageLoop */,
 				3BCA9D3E273A7831008E7F84 /* JFNetworkTools */,
@@ -218,6 +224,8 @@
 				3BCA9D34273A716A008E7F84 /* LaunchScreen.storyboard in Resources */,
 				3BCA9D47273AA4DA008E7F84 /* News.storyboard in Resources */,
 				3BCA9D31273A716A008E7F84 /* Assets.xcassets in Resources */,
+				3BC2FE0B273D61660058FACF /* topic_news.json in Resources */,
+				3BC2FE09273CAACD0058FACF /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
