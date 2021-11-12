@@ -21,7 +21,7 @@
 					<key>UISceneDelegateClassName</key>
 					<string>SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
-					<string>News</string>
+					<string>Home</string>
 				</dict>
 			</array>
 		</dict>

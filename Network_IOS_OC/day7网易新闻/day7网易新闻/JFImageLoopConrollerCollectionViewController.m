@@ -94,8 +94,8 @@
     cell.tag = index;
     cell.headline = self.headlines[index];
 
-    NSLog(@"indexPath = %zd",indexPath.item);
-    NSLog(@"index = %zd",index);
+//    NSLog(@"indexPath = %zd",indexPath.item);
+//    NSLog(@"index = %zd",index);
 
     return cell;
 }
@@ -120,8 +120,6 @@
         [self.collectionView reloadData];
 
     });
-
-
 }
 
 @end

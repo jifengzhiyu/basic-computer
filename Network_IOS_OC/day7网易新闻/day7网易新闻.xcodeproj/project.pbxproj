@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B3629BD273E4D7C00A05BD0 /* JFChannelLable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3629BC273E4D7C00A05BD0 /* JFChannelLable.m */; };
+		3B3629C0273E536F00A05BD0 /* JFHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3629BF273E536F00A05BD0 /* JFHomeCell.m */; };
 		3BC2FE01273C0B760058FACF /* JFNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2FE00273C0B760058FACF /* JFNews.m */; };
 		3BC2FE04273C0DBB0058FACF /* JFNewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2FE03273C0DBA0058FACF /* JFNewsController.m */; };
 		3BC2FE07273C12470058FACF /* JFNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2FE06273C12470058FACF /* JFNewsCell.m */; };
 		3BC2FE09273CAACD0058FACF /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC2FE08273CAACD0058FACF /* Home.storyboard */; };
 		3BC2FE0B273D61660058FACF /* topic_news.json in Resources */ = {isa = PBXBuildFile; fileRef = 3BC2FE0A273D61660058FACF /* topic_news.json */; };
+		3BC2FE0F273D650F0058FACF /* JFChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2FE0E273D650F0058FACF /* JFChannel.m */; };
+		3BC2FE12273D66370058FACF /* JFHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2FE11273D66370058FACF /* JFHomeController.m */; };
 		3BCA9D26273A7168008E7F84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCA9D25273A7168008E7F84 /* AppDelegate.m */; };
 		3BCA9D29273A7168008E7F84 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCA9D28273A7168008E7F84 /* SceneDelegate.m */; };
 		3BCA9D31273A716A008E7F84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BCA9D30273A716A008E7F84 /* Assets.xcassets */; };
@@ -26,6 +30,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B3629BB273E4D7C00A05BD0 /* JFChannelLable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFChannelLable.h; sourceTree = "<group>"; };
+		3B3629BC273E4D7C00A05BD0 /* JFChannelLable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFChannelLable.m; sourceTree = "<group>"; };
+		3B3629BE273E536F00A05BD0 /* JFHomeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFHomeCell.h; sourceTree = "<group>"; };
+		3B3629BF273E536F00A05BD0 /* JFHomeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFHomeCell.m; sourceTree = "<group>"; };
 		3BC2FDFF273C0B760058FACF /* JFNews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFNews.h; sourceTree = "<group>"; };
 		3BC2FE00273C0B760058FACF /* JFNews.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFNews.m; sourceTree = "<group>"; };
 		3BC2FE02273C0DBA0058FACF /* JFNewsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFNewsController.h; sourceTree = "<group>"; };
@@ -34,6 +42,10 @@
 		3BC2FE06273C12470058FACF /* JFNewsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFNewsCell.m; sourceTree = "<group>"; };
 		3BC2FE08273CAACD0058FACF /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		3BC2FE0A273D61660058FACF /* topic_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topic_news.json; sourceTree = "<group>"; };
+		3BC2FE0D273D650F0058FACF /* JFChannel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFChannel.h; sourceTree = "<group>"; };
+		3BC2FE0E273D650F0058FACF /* JFChannel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFChannel.m; sourceTree = "<group>"; };
+		3BC2FE10273D66370058FACF /* JFHomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFHomeController.h; sourceTree = "<group>"; };
+		3BC2FE11273D66370058FACF /* JFHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFHomeController.m; sourceTree = "<group>"; };
 		3BCA9D21273A7168008E7F84 /* day7网易新闻.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "day7网易新闻.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BCA9D24273A7168008E7F84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3BCA9D25273A7168008E7F84 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -100,6 +112,23 @@
 			name = News;
 			sourceTree = "<group>";
 		};
+		3BC2FE0C273D64B80058FACF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3BC2FE08273CAACD0058FACF /* Home.storyboard */,
+				3BC2FE0A273D61660058FACF /* topic_news.json */,
+				3BC2FE0D273D650F0058FACF /* JFChannel.h */,
+				3BC2FE0E273D650F0058FACF /* JFChannel.m */,
+				3BC2FE10273D66370058FACF /* JFHomeController.h */,
+				3BC2FE11273D66370058FACF /* JFHomeController.m */,
+				3B3629BB273E4D7C00A05BD0 /* JFChannelLable.h */,
+				3B3629BC273E4D7C00A05BD0 /* JFChannelLable.m */,
+				3B3629BE273E536F00A05BD0 /* JFHomeCell.h */,
+				3B3629BF273E536F00A05BD0 /* JFHomeCell.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
 		3BCA9D18273A7168008E7F84 = {
 			isa = PBXGroup;
 			children = (
@@ -122,9 +151,8 @@
 		3BCA9D23273A7168008E7F84 /* day7网易新闻 */ = {
 			isa = PBXGroup;
 			children = (
+				3BC2FE0C273D64B80058FACF /* Home */,
 				3BCA9D46273AA4DA008E7F84 /* News.storyboard */,
-				3BC2FE08273CAACD0058FACF /* Home.storyboard */,
-				3BC2FE0A273D61660058FACF /* topic_news.json */,
 				3BC2FDFE273C0B550058FACF /* News */,
 				3BCA9D42273A9A76008E7F84 /* ImageLoop */,
 				3BCA9D3E273A7831008E7F84 /* JFNetworkTools */,
@@ -261,15 +289,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B3629C0273E536F00A05BD0 /* JFHomeCell.m in Sources */,
 				3BC2FE01273C0B760058FACF /* JFNews.m in Sources */,
 				3BCA9D45273A9A98008E7F84 /* JFHeadLine.m in Sources */,
 				3BCA9D4D273ABCBA008E7F84 /* JFHeadLineCell.m in Sources */,
+				3B3629BD273E4D7C00A05BD0 /* JFChannelLable.m in Sources */,
 				3BCA9D26273A7168008E7F84 /* AppDelegate.m in Sources */,
 				3BC2FE04273C0DBB0058FACF /* JFNewsController.m in Sources */,
 				3BCA9D41273A7894008E7F84 /* JFNetworkTools.m in Sources */,
+				3BC2FE12273D66370058FACF /* JFHomeController.m in Sources */,
 				3BC2FE07273C12470058FACF /* JFNewsCell.m in Sources */,
 				3BCA9D4A273AA4FF008E7F84 /* JFImageLoopConrollerCollectionViewController.m in Sources */,
 				3BCA9D37273A716A008E7F84 /* main.m in Sources */,
+				3BC2FE0F273D650F0058FACF /* JFChannel.m in Sources */,
 				3BCA9D29273A7168008E7F84 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,7 +445,7 @@
 				INFOPLIST_FILE = "day7网易新闻/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = News;
+				INFOPLIST_KEY_UIMainStoryboardFile = Home;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -441,7 +473,7 @@
 				INFOPLIST_FILE = "day7网易新闻/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = News;
+				INFOPLIST_KEY_UIMainStoryboardFile = Home;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
