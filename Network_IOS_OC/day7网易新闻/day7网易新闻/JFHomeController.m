@@ -18,7 +18,7 @@
 @end
 
 @implementation JFHomeController
-
+#pragma mark 懒加载
 //从本地获取数据（不需要考虑网络的线程
 //懒加载
 - (NSArray *)channels {
@@ -27,6 +27,7 @@
     }
     return _channels;
 }
+#pragma mark viewDidLoad
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -45,13 +46,16 @@
     [self loadChannels];
 
 }
+#pragma mark viewDidLayoutSubviews
 
 //当计算好collectionView的大小。再设置cell的大小
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     self.flowLayout.itemSize = self.collectionView.bounds.size;
-    NSLog(@"self.collectionView.bounds.size:%f",self.collectionView.bounds.size.height);
+    NSLog(@"collectionView高度:%f",self.collectionView.bounds.size.height);
 }
+
+#pragma mark loadChannels
 
 //在导航控制器中如果出现了scrollView，会自动加上64的偏移
 - (void)loadChannels {
@@ -76,6 +80,7 @@
     self.scrollView.showsHorizontalScrollIndicator = NO;
 }
 
+#pragma mark 数据源方法
 
 //数据源方法
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {

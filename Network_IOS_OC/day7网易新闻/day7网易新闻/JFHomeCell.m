@@ -27,9 +27,8 @@
     [super layoutSubviews];
     //让控制器的view的大小和cell的大小一样
     self.newsController.view.frame = self.bounds;
-    NSLog(@"self.bounds:%f",self.bounds.size.height);
-    NSLog(@"self.newsController.view.frame:%f",self.newsController.view.frame.size.height);
-
+    
+    NSLog(@"单元格高度:%f",self.bounds.size.height);
 }
 
 @end
